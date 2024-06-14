@@ -1,2 +1,2 @@
 teslamate/teslamate
-mysql/mysql
+mysql
