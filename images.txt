@@ -1,3 +1,4 @@
 teslamate/teslamate
 mysql
 node
+node:16
