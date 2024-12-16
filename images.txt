@@ -2,3 +2,4 @@ teslamate/teslamate
 mysql
 node
 node:16
+searxng/searxng
