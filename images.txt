@@ -1,5 +1,6 @@
 teslamate/teslamate
 mysql
+mysql:9.1.0
 node
 node:16
 searxng/searxng
