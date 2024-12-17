@@ -1,6 +1,7 @@
 teslamate/teslamate
 mysql
 mysql:9.1.0
+mysql:8.4.3
 node
 node:16
 searxng/searxng
