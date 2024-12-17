@@ -6,3 +6,4 @@ node
 node:16
 searxng/searxng
 ollama/ollama
+registry
