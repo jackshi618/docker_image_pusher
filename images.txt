@@ -9,3 +9,4 @@ searxng/searxng
 searxng/searxng:2024.12.16-65c970bdf
 ollama/ollama
 registry
+ghcr.io/open-webui/open-webui
