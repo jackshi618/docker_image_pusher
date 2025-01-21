@@ -5,6 +5,8 @@ mysql:8.4.3
 node
 node:16
 node:18
+node:20
+node:22
 searxng/searxng
 searxng/searxng:2024.12.16-65c970bdf
 ollama/ollama
