@@ -3,4 +3,4 @@ mysql
 searxng/searxng
 registry
 ghcr.io/open-webui/open-webui
-Gitea:latest
+ollama
