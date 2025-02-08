@@ -1,6 +1,7 @@
 teslamate/teslamate
-mysql
+mysql:latest
 searxng/searxng
-registry
+registry:2.8.3
+registry:latest
 ghcr.io/open-webui/open-webui
 ollama/ollama
