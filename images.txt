@@ -2,7 +2,6 @@ gitea/gitea:latest
 lobehub/lobe-chat:latest
 ghcr.io/open-webui/open-webui:main
 searxng/searxng:latest
-postgres:15.4
 postgres:17
 ollama/ollama:latest
 ghcr.io/immich-app/immich-machine-learning:release-openvino
