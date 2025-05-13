@@ -9,6 +9,7 @@ ghcr.io/immich-app/immich-machine-learning:release-cuda
 ghcr.io/immich-app/immich-server:release
 node:16
 node:20
+node:22
 redis:6.2-alpine
 teslamate/teslamate:latest
 teslamate/grafana:latest
