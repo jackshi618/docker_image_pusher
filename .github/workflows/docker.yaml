@@ -168,7 +168,7 @@ jobs:
             
             if [ "$pull_success" = false ]; then
               echo "❌ 镜像拉取失败: $line"
-              ((fail_count++))
+              fail_count=$((fail_count + 1))
               failed_images+=("$line")
               continue
             fi
@@ -177,7 +177,7 @@ jobs:
             echo "🏷️  标记镜像: $image -> $new_image"
             if ! docker tag "$image" "$new_image"; then
               echo "❌ 镜像标记失败: $image"
-              ((fail_count++))
+              fail_count=$((fail_count + 1))
               failed_images+=("$line")
               docker rmi "$image" 2>/dev/null || true
               continue
@@ -198,11 +198,11 @@ jobs:
             
             if [ "$push_success" = false ]; then
               echo "❌ 镜像推送失败: $new_image"
-              ((fail_count++))
+              fail_count=$((fail_count + 1))
               failed_images+=("$line")
             else
               echo "✅ 镜像推送成功: $new_image"
-              ((success_count++))
+              success_count=$((success_count + 1))
             fi
             
             # 清理本地镜像（忽略错误，避免影响后续）
