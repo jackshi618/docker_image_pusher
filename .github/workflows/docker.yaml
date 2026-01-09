@@ -102,7 +102,8 @@ jobs:
             name_space="${name_space}_"  # 避免空值影响判断
             
             # 如果镜像存在于数组中，则添加temp_map
-            if [[ -n "${temp_map[$image_name]}" ]]; then
+            # 使用 -v 检查关联数组键是否存在（兼容 set -u）
+            if [[ -v temp_map[$image_name] ]]; then
                  # 如果temp_map已经存在镜像名，判断是不是同一命名空间
                  if [[ "${temp_map[$image_name]}" != "$name_space" ]]; then
                     echo "⚠️  检测到重名镜像: $image_name"
@@ -141,7 +142,8 @@ jobs:
             
             # 处理命名空间前缀
             name_space_prefix=""
-            if [[ -n "${duplicate_images[$image_name]}" ]]; then
+            # 使用 -v 检查关联数组键是否存在（兼容 set -u）
+            if [[ -v duplicate_images[$image_name] ]]; then
                if [[ -n "$name_space" ]]; then
                   name_space_prefix="${name_space}_"
                fi
