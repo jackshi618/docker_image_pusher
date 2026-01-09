@@ -5,8 +5,8 @@ on:
   push:
     branches: [ main ]
   schedule:
-    # 每天 UTC 时间 3:00 执行（北京时间 11:00）
-    - cron: '0 3 * * *'
+    # 每天 UTC 时间 5:00 执行（北京时间 13:00）
+    - cron: '0 5 * * *'
 
 
 env:
