@@ -212,7 +212,7 @@ jobs:
             
             # 显示磁盘空间
             echo "💾 当前磁盘使用情况:"
-            df -hT | grep -E '^/dev/|Filesystem'
+            df -hT | grep -E '^/dev/|Filesystem' || true
             echo ""
             
         done < images.txt
