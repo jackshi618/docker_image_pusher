@@ -16,3 +16,4 @@ tensorchord/pgvecto-rs:pg14-v0.2.0
 registry:latest
 nginx:latest
 nginx:1.27-alpine
+ghcr.io/open-webui/open-webui:ollama
