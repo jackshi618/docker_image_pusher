@@ -18,4 +18,4 @@ nginx:latest
 nginx:1.27-alpine
 ghcr.io/open-webui/open-webui:ollama
 nvcr.io/nvidia/sglang:latest
-
+lmsysorg/sglang:spark
